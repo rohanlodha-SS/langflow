@@ -1,9 +1,8 @@
 services:
-  # A Docker web service
   - type: web
     name: langflow
     runtime: docker
-    dockerfilePath: ./docker/render.pre-release.Dockerfile
+    dockerfilePath: ./Dockerfile
     repo: https://github.com/langflow-ai/langflow
     branch: dev
     healthCheckPath: /health
